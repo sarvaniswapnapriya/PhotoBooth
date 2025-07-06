@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📸 Vintage PhotoBooth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📸 Vintage PhotoBooth</h1>
+  <div class="container">
+    <div class="left-panel">
+      <video id="video" autoplay muted></video>
+      <div class="filters">
+          <button class="filter-btn" data-filter="none">Normal</button>
+          <button class="filter-btn" data-filter="bw_movie">B & W Movie</button>
+          <button class="filter-btn" data-filter="bright_day">Bright Day</button>
+          <button class="filter-btn" data-filter="inkwell">Inkwell</button>
+          <button class="filter-btn" data-filter="foodie">Foodie</button>
+          <button class="filter-btn" data-filter="dreamy">Dreamy</button>
+          <button class="filter-btn" data-filter="vhs">VHS</button>
+      </div>
+      <div class="controls">
+        <button onclick="takePhoto()">📸 Take Photo</button>
+        <button onclick="downloadStrip()">⬇️ Download Strip</button>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h3>📸 Your Vintage Strip</h3>
+      <div class="strip" id="strip"></div>
+    </div>
+  </div>
+  <div class="flash" id="flash"></div>
+  <script src="script.js"></script>
+</body>
+</html>
