@@ -184,8 +184,6 @@ function downloadStrip() {
   ctx.fillText('and', centerX, textY + 25);
   ctx.font = '20px Georgia';
   ctx.fillText('MEMORIES', centerX, textY + 50);
-  ctx.font = '14px Georgia';
-  ctx.fillText('29.10.22', centerX, textY + 70);
 
   const link = document.createElement('a');
   link.download = 'photo_strip.png';
